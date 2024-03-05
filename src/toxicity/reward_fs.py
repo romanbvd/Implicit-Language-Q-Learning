@@ -47,6 +47,7 @@ def get_toxicity_f(noise_1: bool=False):
                 )
                 break
             except:
+                print("Need add openai token============================")
                 time.sleep(1)
                 continue
         output_label = response["choices"][0]["text"]
