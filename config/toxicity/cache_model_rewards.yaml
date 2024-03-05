@@ -25,5 +25,5 @@ model:
     checkpoint_path: outputs/toxicity/upvote_reward/model.pkl
     strict_load: true
 
-dataloader_workers: 0
+dataloader_workers: 1
 bsize: 1024
