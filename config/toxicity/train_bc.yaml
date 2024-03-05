@@ -94,5 +94,5 @@ train:
   loss: {}
 
 wandb:
-  use_wandb: true
+  use_wandb: false
   wandb_project: toxicity_iql
