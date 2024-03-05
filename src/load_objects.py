@@ -32,7 +32,7 @@ def load_item(config, *args, verbose=True):
                 print(f'loading from cache ({name}, {config["cache_id"]})')
             return cache[(name, config['cache_id'])]
     if verbose:
-        print(f'loading {name}: {config}')
+        print(f'===loading {name}: {config}')
     item = registry[name](config, *args, verbose=verbose)
     if 'cache_id' in config:
         print(f'saving to cache ({name}, {config["cache_id"]})')
