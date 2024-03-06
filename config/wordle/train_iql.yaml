@@ -71,7 +71,7 @@ train:
   save_checkpoint_dir: outputs/wordle/wordle_iql_official_test1/
   optim_state_path: null
   epochs: 1
-  dataloader_workers: 1
+  dataloader_workers: 2
   bsize: 64
   grad_accum_steps: 16
   log_every: 256
@@ -83,7 +83,7 @@ train:
   lr: 1e-5
   weight_decay: 0.00
   hard_update_every: null
-  max_steps: null
+  max_steps: 7000
   loss:
     v_loss_weight: 1.0
     q_loss_weight: 1.0
