@@ -2,7 +2,15 @@ defaults:
  - /gpt2: gpt2_plain
 
 name: bc_lm
-dataset: null
+dataset:
+  token_reward:
+    name: constant_token_reward
+    c: 0.0
+  index_file: data/wordle/human_train_idxs.json
+  file_path: data/wordle/random_human_tweet_data_200.json
+  use_true_word: false
+  max_len: null
+  top_p: null
 transition_weight: 0.0
 load:
   name: bc_lm
